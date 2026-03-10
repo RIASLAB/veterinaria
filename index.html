@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento HTML -->
+  <!-- Defino el tipo de caracteres y hago que la página funcione bien en celulares -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>Lugo Vet | Clínica Veterinaria</title>
+
+  <!-- Aquí agrego el favicon para que aparezca el logo en la pestaña -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Conecto el archivo CSS externo donde tengo todos los estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header del sitio -->
+  <!-- Uso la etiqueta semántica header para la parte superior donde va el logo y el menú -->
+  <header class="header" id="top">
+    
+    <!-- Navegación principal del sitio -->
+    <!-- Aquí coloco los enlaces para movernos por la página -->
+    <nav class="nav container">
+      <h1 class="nav__logo">🐾 Lugo Vet</h1>
+
+      <!-- Menú de navegación con enlaces internos -->
+      <!-- Los enlaces llevan a secciones de la misma página usando #id -->
+      <ul class="nav__menu">
+        <li class="nav__item"><a class="nav__link" href="#inicio">Inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#servicios">Servicios</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main contiene el contenido principal de la página -->
+  <main class="main-layout">
+
+    <!-- Primera sección del sitio (Hero) -->
+    <!-- Esta sección funciona como la portada o presentación del sitio -->
+    <section class="hero" id="inicio">
+
+      <!-- Capa oscura sobre la imagen de fondo para mejorar la visibilidad del texto -->
+      <div class="hero__overlay"></div>
+
+      <!-- Contenido principal del hero -->
+      <div class="hero__content container">
+
+        <!-- Pequeña etiqueta descriptiva -->
+        <p class="hero__tag">Clínica veterinaria en Florida, Valle</p>
+
+        <!-- Título principal de la página -->
+        <h2 class="hero__title">Cuidamos la salud y felicidad de tu mascota</h2>
+
+        <!-- Descripción breve del servicio -->
+        <p class="hero__text">
+          En Lugo Vet brindamos atención veterinaria, estética animal, limpieza dental
+          y acompañamiento profesional para perros y gatos, con un servicio cercano,
+          organizado y confiable.
+        </p>
+
+        <!-- Botones de acción para navegar a otras secciones -->
+        <div class="hero__actions">
+          <a href="#servicios" class="btn btn--primary">Ver servicios</a>
+          <a href="#contacto" class="btn btn--secondary">Agenda tu cita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor principal donde organizo el contenido usando Grid en CSS -->
+    <div class="content-grid container">
+
+      <!-- Segunda sección del sitio: servicios -->
+      <!-- Aquí muestro algunos servicios que ofrece la clínica -->
+      <section class="services" id="servicios">
+
+        <!-- Encabezado de la sección -->
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Nuestros servicios</p>
+          <h2 class="section-heading__title">Atención integral para tu mascota</h2>
+          <p class="section-heading__text">
+            Contamos con servicios pensados para el bienestar, la higiene y el cuidado
+            preventivo de cada mascota.
+          </p>
+        </div>
+
+        <!-- Contenedor de tarjetas de servicios -->
+        <!-- En CSS uso flexbox para organizar estas cards en columnas -->
+        <div class="services__cards">
+
+          <!-- Cada article representa un servicio diferente -->
+          <article class="service-card service-card--featured">
+            <img src="imagen1.png" alt="Servicio de baño para mascotas" class="service-card__image" />
+            <h3 class="service-card__title">Baños especializados</h3>
+            <p class="service-card__text">
+              Realizamos baños con productos adecuados para cada tipo de pelaje,
+              ayudando a mantener la piel limpia, sana y protegida.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img src="imagen1.png" alt="Servicio de corte para mascotas" class="service-card__image" />
+            <h3 class="service-card__title">Corte y estética</h3>
+            <p class="service-card__text">
+              Ofrecemos cortes higiénicos y estéticos adaptados a cada raza,
+              buscando comodidad, limpieza y buena presentación.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img src="imagen1.png" alt="Servicio de limpieza dental veterinaria" class="service-card__image" />
+            <h3 class="service-card__title">Limpieza dental</h3>
+            <p class="service-card__text">
+              Ayudamos a prevenir enfermedades bucales, mal aliento y molestias
+              mediante una correcta higiene oral.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Article principal -->
+      <!-- Uso article para mostrar información más importante del sitio -->
+      <article class="info-article">
+
+        <span class="info-article__badge">Información principal</span>
+
+        <h2 class="info-article__title">¿Qué ofrece Lugo Vet?</h2>
+
+        <p class="info-article__text">
+          Lugo Vet es una propuesta de gestión veterinaria pensada para mejorar
+          la atención y la organización de una clínica. Desde una misma plataforma
+          se pueden administrar mascotas, servicios, citas y seguimiento básico,
+          logrando procesos más ágiles y ordenados.
+        </p>
+
+        <p class="info-article__text">
+          Además de mostrar una imagen profesional de la clínica, esta página busca
+          comunicar confianza, cercanía y compromiso con el bienestar animal.
+        </p>
+
+        <!-- Botón dentro del article -->
+        <!-- En CSS uso position para ubicarlo dentro del bloque -->
+        <a href="#contacto" class="info-article__button">Contáctanos</a>
+
+      </article>
+
+      <!-- Aside -->
+      <!-- Uso aside para mostrar información complementaria al contenido principal -->
+      <aside class="sidebar">
+
+        <!-- Caja con horarios -->
+        <div class="sidebar__box">
+          <h3 class="sidebar__title">Horarios</h3>
+          <p class="sidebar__text">Lunes a viernes: 8:00 a.m. - 6:00 p.m.</p>
+          <p class="sidebar__text">Sábados: 8:00 a.m. - 2:00 p.m.</p>
+        </div>
+
+        <!-- Caja con recomendaciones -->
+        <div class="sidebar__box">
+          <h3 class="sidebar__title">Recomendaciones</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">Mantén al día el esquema de vacunación.</li>
+            <li class="sidebar__item">Realiza controles periódicos.</li>
+            <li class="sidebar__item">Cuida la higiene dental de tu mascota.</li>
+          </ul>
+        </div>
+
+        <!-- Caja destacada -->
+        <div class="sidebar__box sidebar__box--highlight">
+          <h3 class="sidebar__title">Tip importante</h3>
+          <p class="sidebar__text">
+            Una atención preventiva a tiempo puede evitar enfermedades y mejorar
+            la calidad de vida de tu mascota.
+          </p>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer del sitio -->
+  <!-- Aquí agrego la información de contacto -->
+  <footer class="footer" id="contacto">
+
+    <div class="footer__content container">
+
+      <h2 class="footer__title">Lugo Vet</h2>
+
+      <p class="footer__text">Cl. 10 #18-37, Florida, Valle del Cauca</p>
+      <p class="footer__text">Correo: contacto@lugovet.com</p>
+      <p class="footer__text">Teléfono: +57 314 551 7341</p>
+
+      <!-- El año se genera automáticamente con JavaScript -->
+      <p class="footer__copy">© <span id="year"></span> Lugo Vet - Todos los derechos reservados</p>
+
+    </div>
+
+  </footer>
+
+  <!-- Script pequeño para mostrar el año actual automáticamente -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
