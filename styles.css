@@ -388,9 +388,9 @@ body {
    Footer
 ================================================== */
 .footer {
-  background: #0f172a;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
   color: white;
-  padding: 46px 0;
+  padding: 60px 0;
 }
 
 .footer__content {
@@ -398,13 +398,11 @@ body {
 }
 
 .footer__title {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .footer__text {
-  color: #cbd5e1;
-  margin-bottom: 6px;
+  font-size: 0.95rem;
 }
 
 .footer__copy {
